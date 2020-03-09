@@ -6,11 +6,30 @@
     <title>Variable Font Test</title>
     <style>
       @font-face {
+        font-family: "Poppins-Variable";
+        src: url("woff2/poppins.variable.woff2")
+            format("woff2 supports variations"),
+          url("woff2/poppins.variable.woff2") format("woff2-variations");
         font-display: swap;
-        font-family: "Poppins";
-        src: url("woff2/poppins.woff2") format("woff2");
         font-weight: 100 900;
       }
+
+      @font-face {
+        font-family: "Poppins";
+        src: url("woff2/poppins.regular.woff2") format("woff2"),
+          url("woff/poppins.regular.woff") format("woff");
+        font-display: swap;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Poppins";
+        src: url("woff2/poppins.semibold.woff2") format("woff2"),
+          url("woff/poppins.semibold.woff") format("woff");
+        font-display: swap;
+        font-weight: 600;
+      }
+
       html {
         font-family: "Poppins", sans-serif;
         font-size: 2em;
